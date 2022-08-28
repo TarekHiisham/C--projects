@@ -10,14 +10,6 @@ typedef float f32_t ;
 typedef double f64_t ; 
 
 
-void Add_node_FL(u32_t data) ;
-void Delete_node_FL(void) ;
-void Add_node_FA(u32_t data , u8_t location);
-void Delete_node_FA(u8_t location);
-void push(u32_t data);
-
-
-
 
 typedef struct linked_node
 {
@@ -25,4 +17,8 @@ typedef struct linked_node
         struct linked_node * next_node ;
 }node_t;
 
-void printList(node_t *node);
+extern node_t *head_ptr ;
+extern node_t **last    ;
+
+
+
