@@ -4,8 +4,6 @@
 
 /* ADD Node from last */
 
-node_t *head_ptr = NULL;
-node_t **last    = NULL;
 void Add_node_FL(u32_t data){ 
         if(head_ptr ==NULL){
                      /*First Node */        

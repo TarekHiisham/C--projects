@@ -18,7 +18,7 @@ typedef struct linked_node
 }node_t;
 
 extern node_t *head_ptr ;
-extern node_t **last    ;
+extern node_t **last   ;  
 
 
 

@@ -10,18 +10,25 @@ void Delete_node_FA(u8_t location);
 void push(u32_t data);
 void printList(node_t *node);
 
+node_t *head_ptr=NULL ;
+node_t **last =NULL  ;
+
 int main(void){
- Add_node_FL(50);
- Add_node_FL(30);
- Add_node_FL(20);
- Add_node_FL(70);
-  printList(head_ptr);
- Delete_node_FL();
- printList(head_ptr);
- Add_node_FA(3,2);
- printList(head_ptr);
- Delete_node_FA(4);
- printList(head_ptr);
+Add_node_FA(20,1);
+printList(head_ptr);
+Add_node_FL(5);
+printList(head_ptr);
+Add_node_FA(35,2);
+printList(head_ptr);
+Add_node_FL(70);
+printList(head_ptr);
+Delete_node_FA(1);
+printList(head_ptr);
+Delete_node_FL();
+printList(head_ptr);
+Add_node_FA(4,9);
+printList(head_ptr);
+
 
 return 0 ;      
 }
